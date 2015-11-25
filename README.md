@@ -24,4 +24,7 @@ Czas: *13 minut*
 Miejsce zajete po rozpakowaniu: *29,4 GB (bajtów: 31 648 374 104)*
 
 
-### Import
+### Import Mongodb
+
+Czas : 33 minuty
+
