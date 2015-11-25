@@ -14,7 +14,8 @@
 
 ### Plik z danymi:
 
-Plik RC_2015-01.bz2 zajmuje 5,07 GB (bajtów: 5 452 413 560). Każda linijka pliku to jeden obiekt JSON, komentarz z serwisu Reddit, z tekstem komentarza, autorem, itd. 
+Plik RC_2015-01.bz2 zajmuje 5,07 GB (bajtów: 5 452 413 560). Wszystkich komentarzy/JSON-ów jest 53 851 542.
+
 
 ### Rozpakowanie pliku
 
@@ -23,3 +24,4 @@ Czas: *13 minut*
 Miejsce zajete po rozpakowaniu: *29,4 GB (bajtów: 31 648 374 104)*
 
 
+### Import
