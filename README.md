@@ -1,6 +1,6 @@
 # Nosql - zaliczenie
 
-## Zadanie 1
+## Zadanie 2a
 
 ### Parametry komputera:
 
@@ -11,6 +11,9 @@
 | Dysk | 512 GB |
 | Pamiec RAM | 8 GB | 
 | Typ systemu  | 64-bit |
+| Mongo | 3.0.7 |
+| Postgres | 9.4.5 |
+| Python | 3.5.0 |
 
 ### Plik z danymi:
 
@@ -47,4 +50,5 @@ Czas : 33 minuty
 
 #### Podsumowanie
 Mongodb korzystalo z wszystkich procesorow jednoczesnie, dodatkowo nie zuzywalo przez caly czas trwania importu caly czas procesora i dysku na 100%. Korzystalo naprzemiennie z dysku / procesora. Pamiec poczatkowo rosla, az w koncu stanela na granicy 95-97 %.
+
 
