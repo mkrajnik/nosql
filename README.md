@@ -20,7 +20,9 @@ Plik RC_2015-01.bz2 zajmuje 5,07 GB (bajtów: 5 452 413 560). Wszystkich komenta
 ### Rozpakowanie pliku
 
 Użyty program *7zip* 
+
 Czas: *13 minut*
+
 Miejsce zajete po rozpakowaniu: *29,4 GB (bajtów: 31 648 374 104)*
 
 
