@@ -30,6 +30,7 @@ Miejsce zajete po rozpakowaniu: *29,4 GB (bajtów: 31 648 374 104)*
 
 Czas : 33 minuty
 
+Poczatek importu:
 ![zdjecie1](https://github.com/mkrajnik/nosql/blob/master/mongo1.png)
 
 ![zdjecie2](https://github.com/mkrajnik/nosql/blob/master/mongo2.png)
@@ -38,6 +39,14 @@ Czas : 33 minuty
 
 ![zdjecie4](https://github.com/mkrajnik/nosql/blob/master/mongo4.png)
 
+
+Jak widać mongoimport naprzemiennie korzystal z procesora/dysku twardego.
+
+
 ![zdjecie5](https://github.com/mkrajnik/nosql/blob/master/mongo5.png)
 
+Ale praca byla podzielona rownomiernie na kazdy procesor.
+
 ![zdjecie6](https://github.com/mkrajnik/nosql/blob/master/mongo6.png)
+
+Koniec importu, zaimportowano wszystkie dokumenty.
