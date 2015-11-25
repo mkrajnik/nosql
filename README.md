@@ -30,3 +30,4 @@ Miejsce zajete po rozpakowaniu: *29,4 GB (bajtów: 31 648 374 104)*
 
 Czas : 33 minuty
 
+![zdjecie1](https://github.com/mkrajnik/nosql/blob/master/mongo1.png)
