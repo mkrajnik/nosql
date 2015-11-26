@@ -57,5 +57,5 @@ Mongodb korzystalo z wszystkich procesorow jednoczesnie, dodatkowo nie zuzywalo 
 Do importu Postgres musimy przygotować plik, trzeba zamienić apostrofy na inny znak np. spacje. Wtedy dopiero poprawnie zaimportuje sie do bazy.
 W PowerShellu używam polecenia:
 
-get-content somefile.txt | %{$_ -replace "expression","replace"}
+get-content .\RC_2015-01 | %{$_ -replace "'"," "} > RC_2015-011
 
