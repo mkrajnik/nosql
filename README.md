@@ -52,3 +52,10 @@ Czas : 33 minuty
 Mongodb korzystalo z wszystkich procesorow jednoczesnie, dodatkowo nie zuzywalo przez caly czas trwania importu caly czas procesora i dysku na 100%. Korzystalo naprzemiennie z dysku / procesora. Pamiec poczatkowo rosla, az w koncu stanela na granicy 95-97 %.
 
 
+### Import Postgres
+
+Do importu Postgres musimy przygotować plik, trzeba zamienić apostrofy na inny znak np. spacje. Wtedy dopiero poprawnie zaimportuje sie do bazy.
+W PowerShellu używam polecenia:
+
+get-content somefile.txt | %{$_ -replace "expression","replace"}
+
