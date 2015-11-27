@@ -114,5 +114,7 @@ mydb.myColl.count();
 ```
 #### Postgres
 
-``` sql select count(*) from subreddits ; ```
+``` sql
+select count(*) from subreddits ; 
+```
 
