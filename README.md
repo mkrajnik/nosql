@@ -145,7 +145,7 @@ db.myColl.findOne();
 
 4. Suma "score" autora YoungModern 
 
-```
+``` sql
 db.myColl.aggregate ([
   { $match: { "author": "YoungModern"  } },
   {  $group: { _id: "$_id", total: { $sum: "$score"  } } }
