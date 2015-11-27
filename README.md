@@ -152,7 +152,7 @@ db.myColl.findOne();
 
 ![zdjecie9](https://github.com/mkrajnik/nosql/blob/master/mongo9.png)
 
--> Suma "score" autora YoungModern 
+-> Suma punktów autora YoungModern 
 
 ``` sql
 db.myColl.aggregate ([
