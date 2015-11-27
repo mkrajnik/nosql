@@ -58,17 +58,6 @@ Mongodb korzystalo z wszystkich procesorow jednoczesnie, dodatkowo nie zuzywalo 
 Do importu Postgres musimy przygotować plik, trzeba zamienić apostrofy na inny znak np. spacje. Wtedy dopiero poprawnie zaimportuje sie do bazy.
 W PowerShellu używam polecenia:
 
-
-
-
-![zdjecie7](https://github.com/mkrajnik/nosql/blob/master/mongo7.png)
-
-![zdjecie8](https://github.com/mkrajnik/nosql/blob/master/mongo8.png)
-
-![zdjecie9](https://github.com/mkrajnik/nosql/blob/master/mongo9.png)
-
-![zdjecie10](https://github.com/mkrajnik/nosql/blob/master/mongo10.png)
-
 ``` get-content .\RC_2015-01 | %{$_ -replace "'"," "} > RC_2015-011 ```
 
 Teraz w Postgresie tworzymy tabele:
@@ -123,6 +112,8 @@ Czas importu: 44 minuty.
 ```  
 mydb.myColl.count();
 ```
+![zdjecie7](https://github.com/mkrajnik/nosql/blob/master/mongo7.png)
+
 #### Postgres
 
 ``` sql
@@ -139,6 +130,7 @@ select count(*) from subreddits ;
 db.myColl.find({ "author":"BigGupp1" });
 ```
 
+![zdjecie8](https://github.com/mkrajnik/nosql/blob/master/mongo8.png)
 
 2. Ile jest zarchiwizowanych plików
 
@@ -154,6 +146,8 @@ db.myColl.findOne();
 
 ```
 
+![zdjecie9](https://github.com/mkrajnik/nosql/blob/master/mongo9.png)
+
 4. Suma "score" autora YoungModern 
 
 ``` sql
@@ -162,4 +156,6 @@ db.myColl.aggregate ([
   {  $group: { _id: "$_id", total: { $sum: "$score"  } } }
 ])
 ```
+
+![zdjecie10](https://github.com/mkrajnik/nosql/blob/master/mongo10.png)
 
