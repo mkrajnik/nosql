@@ -60,18 +60,14 @@ W PowerShellu używam polecenia:
 
 
 
-![zdjecie6](https://github.com/mkrajnik/nosql/blob/master/mongo6.png)
 
+![zdjecie7](https://github.com/mkrajnik/nosql/blob/master/mongo7.png)
 
-![zdjecie6](https://github.com/mkrajnik/nosql/blob/master/mongo6.png)
+![zdjecie8](https://github.com/mkrajnik/nosql/blob/master/mongo8.png)
 
+![zdjecie9](https://github.com/mkrajnik/nosql/blob/master/mongo9.png)
 
-
-![zdjecie6](https://github.com/mkrajnik/nosql/blob/master/mongo6.png)
-
-
-
-![zdjecie6](https://github.com/mkrajnik/nosql/blob/master/mongo6.png)
+![zdjecie10](https://github.com/mkrajnik/nosql/blob/master/mongo10.png)
 
 ``` get-content .\RC_2015-01 | %{$_ -replace "'"," "} > RC_2015-011 ```
 
