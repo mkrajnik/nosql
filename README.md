@@ -124,7 +124,7 @@ select count(*) from subreddits ;
 
 ### Zapytania
 
-1. Znalezienie wpisów autora : BigGupp1
+-> Znalezienie wpisów autora : BigGupp1
  
 ``` sql
 db.myColl.find({ "author":"BigGupp1" });
@@ -132,7 +132,7 @@ db.myColl.find({ "author":"BigGupp1" });
 
 ![zdjecie8](https://github.com/mkrajnik/nosql/blob/master/mongo8.png)
 
-2. Ile jest zarchiwizowanych plików
+->  Ile jest zarchiwizowanych plików
 
 ``` sql
 db.myColl.find({ "archived":"true" }).count();
@@ -142,7 +142,7 @@ db.myColl.find({ "archived":"true" }).count();
 
 Jak widać... nie archiwizuja ;)
 
-3. Przykladowy rekord
+->  Przykladowy rekord
 
 ``` sql
 
@@ -152,7 +152,7 @@ db.myColl.findOne();
 
 ![zdjecie9](https://github.com/mkrajnik/nosql/blob/master/mongo9.png)
 
-4. Suma "score" autora YoungModern 
+-> Suma "score" autora YoungModern 
 
 ``` sql
 db.myColl.aggregate ([
