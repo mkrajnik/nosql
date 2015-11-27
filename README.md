@@ -135,3 +135,20 @@ db.myColl.find({ "author":"BigGupp1" });
 db.myColl.find({ "archived":"true" }).count();
 ```
 
+3. Przykladowy rekord
+
+``` sql
+
+db.myColl.findOne();
+
+```
+
+4. Suma "score" autora YoungModern 
+
+```
+db.myColl.aggregate ([
+  { $match: { "author": "YoungModern"  } },
+  {  $group: { _id: "$_id", total: { $sum: "$score"  } } }
+])
+```
+
