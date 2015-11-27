@@ -160,5 +160,4 @@ db.myColl.aggregate ([
   {  $group: { _id: "$_id", total: { $sum: "$score"  } } }
 ])
 ```
-
-
+![zdjecie11](https://github.com/mkrajnik/nosql/blob/master/mongo11.png)
