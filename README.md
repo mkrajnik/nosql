@@ -138,6 +138,10 @@ db.myColl.find({ "author":"BigGupp1" });
 db.myColl.find({ "archived":"true" }).count();
 ```
 
+![zdjecie10](https://github.com/mkrajnik/nosql/blob/master/mongo10.png)
+
+Jak widać... nie archiwizuja ;)
+
 3. Przykladowy rekord
 
 ``` sql
@@ -157,5 +161,4 @@ db.myColl.aggregate ([
 ])
 ```
 
-![zdjecie10](https://github.com/mkrajnik/nosql/blob/master/mongo10.png)
 
