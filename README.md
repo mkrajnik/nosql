@@ -118,3 +118,20 @@ mydb.myColl.count();
 select count(*) from subreddits ; 
 ```
 
+## Zadanie 2c 
+
+### Zapytania
+
+1. Znalezienie wpisów autora : BigGupp1
+ 
+``` sql
+db.myColl.find({ "author":"BigGupp1" });
+```
+
+
+2. Ile jest zarchiwizowanych plików
+
+``` sql
+db.myColl.find({ "archived":"true" }).count();
+```
+
