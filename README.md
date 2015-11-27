@@ -157,7 +157,7 @@ db.myColl.findOne();
 ``` sql
 db.myColl.aggregate ([
   { $match: { "author": "YoungModern"  } },
-  {  $group: { _id: "$_id", total: { $sum: "$score"  } } }
+  {  $group: { _id: "$author", total: { $sum: "$score"  } } }
 ])
 ```
 ![zdjecie11](https://github.com/mkrajnik/nosql/blob/master/mongo11.png)
