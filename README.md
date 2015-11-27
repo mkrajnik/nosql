@@ -1,3 +1,4 @@
+# Martyna Krajnik, mkrajnik94@gmail.com
 # Nosql - zaliczenie
 
 ## Zadanie 2a
@@ -99,3 +100,19 @@ insert()
 
 
 ```
+
+Czas importu: 44 minuty.
+
+## Zadanie 2b
+
+### Zliczenie rekordów
+
+####  MongoDB
+
+```  
+mydb.myColl.count();
+```
+#### Postgres
+
+``` sql select count(*) from subreddits ; ```
+
