@@ -11,6 +11,7 @@
 | Procesor | Intel Core i5-4590S @ 3.00 GHz |
 | Dysk | 512 GB |
 | Pamiec RAM | 8 GB | 
+| System  | Windows 10 |
 | Typ systemu  | 64-bit |
 | Mongo | 3.0.7 |
 | Postgres | 9.4.5 |
