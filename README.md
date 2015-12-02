@@ -151,14 +151,6 @@ select count(*) from subreddits ;
 
 ### Zapytania
 
--> Znalezienie wpisów autora : BigGupp1
- 
-``` sql
-db.myColl.find({ "author":"BigGupp1" });
-```
-
-![zdjecie8](https://github.com/mkrajnik/nosql/blob/master/mongo8.png)
-
 ->  Ile jest zarchiwizowanych plików
 
 ``` sql
