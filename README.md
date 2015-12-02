@@ -41,22 +41,33 @@ Miejsce zajete po rozpakowaniu: *29,4 GB (bajtów: 31 648 374 104)*
 | Korzystanie z danych | Kazdy komentarz ma swoje "atrybuty" z ktorych mozemy korzystać | Wszystkie dane sa wrzucone do jednej kolumny typu |
 
 
-#### Screeny z importu:
+
+
+#### Import - Mongodb - szczególy
 
 ![zdjecie1](https://github.com/mkrajnik/nosql/blob/master/mongo1.png)
 
+Używamy komendy mongoimport do importu
+
+
+
 ![zdjecie2](https://github.com/mkrajnik/nosql/blob/master/mongo2.png)
+
+Jak widać, Mongo naprzemiennie korzysta z dysku/procesora. Nie wykorzystuje caly czas w 100% wszystkich zasobów.
+
 
 ![zdjecie3](https://github.com/mkrajnik/nosql/blob/master/mongo3.png)
 
-![zdjecie4](https://github.com/mkrajnik/nosql/blob/master/mongo4.png)
+Podczas trawnia importu - Mongo wykorzystuje cala pamiec dostepna na komputerze, co oznacza, ze podczas trwania importu najlepiej odejsc od komputera i zrobic sobie kawe... Bo korzystanie z niego podczas importu jest strasznie uciazliwe. Tak jak wczesniej bylo widac, dysk/procesor dziala naprzemiennie - przez caly import.
 
 ![zdjecie5](https://github.com/mkrajnik/nosql/blob/master/mongo5.png)
 
+Jeszcze spojrzmy jak Mongo wykorzystuje procesory... Wielki + dla Mongo - wykorzystuje równomiernie procesory dostepne w komputzerze, nie obciaza tylko jednego.
+
+
 ![zdjecie6](https://github.com/mkrajnik/nosql/blob/master/mongo6.png)
 
-
-#### Podsumowanie
+Import zakonczony powodzeniem, zaimportowano wszystkie rekordy 
 
 
 ### Import Postgres
