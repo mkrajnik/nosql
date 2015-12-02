@@ -31,9 +31,14 @@ Czas: *13 minut*
 Miejsce zajete po rozpakowaniu: *29,4 GB (bajtów: 31 648 374 104)*
 
 
-### Import Mongodb
+### Import 
 
-Czas : 33 minuty
+|--| Mongodb | Postgresql |
+|Czas | 33 minuty | 45 minut|
+|Zużycie zasobów | Mongodb korzystalo z wszystkich procesorow jednoczesnie, dodatkowo nie zuzywalo przez caly czas trwania importu caly czas procesora i dysku na 100%. Korzystalo naprzemiennie z dysku / procesora. Pamiec poczatkowo rosla, az w koncu stanela na granicy 95-97 %. |  -- |
+| Łatwosc importu | Używamy jednego polecenia | Trzeba plik przeparsować, a potem za pomoca skryptu wrzucic do bazy. |
+| Korzystanie z danych | Kazdy komentarz ma swoje "atrybuty" z ktorych mozemy korzystać | Wszystkie dane sa wrzucone do jednej kolumny typu |
+
 
 #### Screeny z importu:
 
@@ -51,7 +56,6 @@ Czas : 33 minuty
 
 
 #### Podsumowanie
-Mongodb korzystalo z wszystkich procesorow jednoczesnie, dodatkowo nie zuzywalo przez caly czas trwania importu caly czas procesora i dysku na 100%. Korzystalo naprzemiennie z dysku / procesora. Pamiec poczatkowo rosla, az w koncu stanela na granicy 95-97 %.
 
 
 ### Import Postgres
