@@ -1,5 +1,15 @@
 # Martyna Krajnik, mkrajnik94@gmail.com
 # Nosql - zaliczenie
+Rozwiązania zadań z przedmiotu *Bazy NoSQL*:
+
+1. [Zaliczenie](zaliczenie.md):
+ - [ ] Neo4j
+ - [x] EDA
+1. [Egzamin](egzamin.md)
+ - [ ] Aggregation Pipeline
+ - [ ] MapReduce
+
+
 
 ## Zadanie 2a
 
