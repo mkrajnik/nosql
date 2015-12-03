@@ -51,18 +51,6 @@
     },
 	{
       "type": "Feature",
-      "properties": {"name" : "Rotmanka",
-		"country" : "PL"},
-      "geometry": {
-       "type" : "Point",
-			"coordinates" : [
-				18.6038,
-				54.27425
-			] 
-      }
-    },
-	{
-      "type": "Feature",
       "properties": {},
       "geometry": {
         "type": "Polygon",
