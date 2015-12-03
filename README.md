@@ -203,4 +203,4 @@ db.myColl.aggregate ([
 > db.stacje.find({loc: {$near: {$geometry: {type: "Point", coordinates: [18.17585,54.618011]}, $maxDistance: 10000}}}).skip(1)
 ```
 
-<script src="https://embed.github.com/view/geojson/mkrajnik/nosql/master/mapa1.geojson"></script>
+<script src="https://embed.github.com/view/geojson/mkrajnik/nosql/blob/master/mapa1.geojson"></script>
