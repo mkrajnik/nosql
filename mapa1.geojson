@@ -15,25 +15,37 @@
     },
 	{
       "type": "Feature",
-      "properties": {"name" : "Kowale",
+      "properties": {"name" : "Goscicino",
 		"country" : "PL"},
       "geometry": {
         "type" : "Point",
 			"coordinates" : [
-				18.561489,
-				54.309761
+				18.154909,
+				54.604591
 			]
       }
     },
 	{
       "type": "Feature",
-      "properties": {"name" : "Pruska Plebanka",
+      "properties": {"name" : "Orle",
 		"country" : "PL"},
       "geometry": {
         "type" : "Point",
 			"coordinates" : [
-				18.66667,
-				54.26667
+				18.17057,
+				54.640221
+			]
+      }
+    },
+    	{
+      "type": "Feature",
+      "properties": {"name" : "Wejherowo",
+		"country" : "PL"},
+      "geometry": {
+        "type" : "Point",
+			"coordinates" : [
+				18.2337,
+		 		54.605999
 			]
       }
     },
