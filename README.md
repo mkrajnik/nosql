@@ -128,7 +128,21 @@ insert()
 
 ```
 
-Czas importu: 44 minuty.
+
+Zużycie zasobów:
+
+![zdjecie-post1](https://github.com/mkrajnik/nosql/blob/master/mongo-postgres2.png)
+
+Postgres dziala podobnie jak Mongo - korzysta naprzemiennie z dysku/procesora, ale pamiec nie jest wykorzystywana w dokladnie 100%.
+
+![zdjecie-post2](https://github.com/mkrajnik/nosql/blob/master/mongo-postgres1.png)
+
+Postgres równomiernie rozklada prace na kazdy z procesorow
+
+
+Przykladowy rekord:
+
+![zdjecie-posrt2](https://github.com/mkrajnik/nosql/blob/master/mongo-postgres3.png)
 
 ## Zadanie 2b
 
