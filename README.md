@@ -194,3 +194,12 @@ db.myColl.aggregate ([
 ])
 ```
 ![zdjecie11](https://github.com/mkrajnik/nosql/blob/master/mongo11.png)
+
+
+### Zadanie 2d - Geojson
+
+1. Miejscowosci oddalone o 10 km od Bolszewa: 
+``` bash
+> db.stacje.find({loc: {$near: {$geometry: {type: "Point", coordinates: [18.17585,54.618011]}, $maxDistance: 10000}}}).skip(1)
+```
+
