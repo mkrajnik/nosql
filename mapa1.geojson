@@ -1,0 +1,82 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+  {
+      "type": "Feature",
+      "properties": {"name" : "Goscicino", 
+		"country" : "PL"},
+      "geometry": {
+        "type" : "Point",
+			"coordinates" : [
+				18.154909,
+				54.604591
+			]
+      }
+    },
+	{
+      "type": "Feature",
+      "properties": {"name" : "Orle", 
+		"country" : "PL"},
+      "geometry": {
+        "type" : "Point",
+			"coordinates" : [
+				18.17057,
+				54.640221
+			]
+      }
+    },
+	{
+      "type": "Feature",
+      "properties": {"name" : "Wejherowo",
+		"country" : "PL"},
+      "geometry": {
+        "type" : "Point",
+			"coordinates" : [
+				18.2337,
+				54.605999
+			]
+      }
+    },
+	{
+      "type": "Feature",
+      "properties": {"name" : "Luzino", 
+	    "country" : "PL"},
+      "geometry": {
+       "type" : "Point",
+			"coordinates" : [
+				18.10907,
+				54.56604
+			] 
+      }
+    },
+
+	{
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+				18.154909,
+				54.604591
+			],
+            [
+				18.17057,
+				54.640221
+			],
+            [
+				18.2337,
+				54.605999
+			],
+            [
+				18.10907,
+				54.56604
+			],
+			
+          ]
+        ]
+      }
+    }
+   ]
+}
