@@ -3,13 +3,13 @@
   "features": [
   {
       "type": "Feature",
-      "properties": {"name" : "Gdańsk",
+      "properties": {"name" : "Bolszewo",
 		"country" : "PL"},
       "geometry": {
         "type" : "Point",
 			"coordinates" : [
-				18.689699,
-				54.361099
+				18.17585,
+				54.618011
 			]
       }
     },
