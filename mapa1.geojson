@@ -1,7 +1,20 @@
 {
   "type": "FeatureCollection",
   "features": [
+  	 {
+      "type": "Feature",
+      "properties": {"name" : "Bolszewo",
+		"country" : "PL"},
+      "geometry": {
+        "type" : "Point",
+			"coordinates" : [
+				18.17585
+			        54.618011
+			]
+      }
+    },
   {
+  	
       "type": "Feature",
       "properties": {"name" : "Goscicino", 
 		"country" : "PL"},
@@ -57,6 +70,10 @@
         "type": "Polygon",
         "coordinates": [
           [
+          	[
+				18.17585
+			        54.618011
+			]
             [
 				18.154909,
 				54.604591
