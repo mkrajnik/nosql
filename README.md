@@ -238,3 +238,11 @@ db.miasta.find({"name":"Sopot"})
 
 [![mapa3](https://github.com/mkrajnik/nosql/blob/master/zdjecia/geo3.png)](https://github.com/mkrajnik/nosql/blob/master/mapa/mapa2.geojson)
 
+
+4. Miejscowosci zawierajace slowo "Biała" majace id wieksze niz 1000000
+
+``` bash
+db.miasta.find({ $and : [ {"_id": { $gt: 1000000}  } ,  { $text: { $search: "Biała" } }]})
+```
+
+
