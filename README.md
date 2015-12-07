@@ -55,27 +55,27 @@ Miejsce zajete po rozpakowaniu: *29,4 GB (bajtów: 31 648 374 104)*
 
 #### Import - Mongodb - szczególy
 
-![zdjecie1](https://github.com/mkrajnik/nosql/blob/zdjecia/master/mongo1.png)
+![zdjecie1](https://github.com/mkrajnik/nosql/blob/master/zdjecia/mongo1.png)
 
 Używamy komendy mongoimport do importu
 
 
 
-![zdjecie2](https://github.com/mkrajnik/nosql/blob/master/mongo2.png)
+![zdjecie2](https://github.com/mkrajnik/nosql/blob/master/zdjecia/mongo2.png)
 
 Jak widać, Mongo naprzemiennie korzysta z dysku/procesora. Nie wykorzystuje caly czas w 100% wszystkich zasobów.
 
 
-![zdjecie3](https://github.com/mkrajnik/nosql/blob/master/mongo3.png)
+![zdjecie3](https://github.com/mkrajnik/nosql/blob/master/zdjecia/mongo3.png)
 
 Podczas trawnia importu - Mongo wykorzystuje cala pamiec dostepna na komputerze, co oznacza, ze podczas trwania importu najlepiej odejsc od komputera i zrobic sobie kawe... Bo korzystanie z niego podczas importu jest strasznie uciazliwe. Tak jak wczesniej bylo widac, dysk/procesor dziala naprzemiennie - przez caly import.
 
-![zdjecie5](https://github.com/mkrajnik/nosql/blob/master/mongo5.png)
+![zdjecie5](https://github.com/mkrajnik/nosql/blob/master/zdjecia/mongo5.png)
 
 Jeszcze spojrzmy jak Mongo wykorzystuje procesory... Wielki + dla Mongo - wykorzystuje równomiernie procesory dostepne w komputzerze, nie obciaza tylko jednego.
 
 
-![zdjecie6](https://github.com/mkrajnik/nosql/blob/master/mongo6.png)
+![zdjecie6](https://github.com/mkrajnik/nosql/blob/master/zdjecia/mongo6.png)
 
 Import zakonczony powodzeniem, zaimportowano wszystkie rekordy 
 
@@ -131,18 +131,18 @@ insert()
 
 Zużycie zasobów:
 
-![zdjecie-post1](https://github.com/mkrajnik/nosql/blob/master/mongo-postgres2.png)
+![zdjecie-post1](https://github.com/mkrajnik/nosql/blob/master/zdjecia/mongo-postgres2.png)
 
 Postgres dziala podobnie jak Mongo - korzysta naprzemiennie z dysku/procesora, ale pamiec nie jest wykorzystywana w dokladnie 100%.
 
-![zdjecie-post2](https://github.com/mkrajnik/nosql/blob/master/mongo-postgres1.png)
+![zdjecie-post2](https://github.com/mkrajnik/nosql/blob/master/zdjecia/mongo-postgres1.png)
 
 Postgres równomiernie rozklada prace na kazdy z procesorow
 
 
 Przykladowy rekord:
 
-![zdjecie-posrt2](https://github.com/mkrajnik/nosql/blob/master/mongo-postgres3.png)
+![zdjecie-posrt2](https://github.com/mkrajnik/nosql/blob/master/zdjecia/mongo-postgres3.png)
 
 ## Zadanie 2b
 
@@ -153,7 +153,7 @@ Przykladowy rekord:
 ```  
 mydb.myColl.count();
 ```
-![zdjecie7](https://github.com/mkrajnik/nosql/blob/master/mongo7.png)
+![zdjecie7](https://github.com/mkrajnik/nosql/blob/master/zdjecia/mongo7.png)
 
 #### Postgres
 
@@ -171,7 +171,7 @@ select count(*) from subreddits ;
 db.myColl.find({ "archived":"true" }).count();
 ```
 
-![zdjecie10](https://github.com/mkrajnik/nosql/blob/master/mongo10.png)
+![zdjecie10](https://github.com/mkrajnik/nosql/blob/master/zdjecia/mongo10.png)
 
 Jak widać... nie archiwizuja ;)
 
@@ -183,7 +183,7 @@ db.myColl.findOne();
 
 ```
 
-![zdjecie9](https://github.com/mkrajnik/nosql/blob/master/mongo9.png)
+![zdjecie9](https://github.com/mkrajnik/nosql/blob/master/zdjecia/mongo9.png)
 
 -> Suma punktów autora YoungModern 
 
@@ -193,7 +193,7 @@ db.myColl.aggregate ([
   {  $group: { _id: "$author", total: { $sum: "$score"  } } }
 ])
 ```
-![zdjecie11](https://github.com/mkrajnik/nosql/blob/master/mongo11.png)
+![zdjecie11](https://github.com/mkrajnik/nosql/blob/master/zdjecia/mongo11.png)
 
 
 ### Zadanie 2d - Geojson
@@ -203,4 +203,3 @@ db.myColl.aggregate ([
 > db.stacje.find({loc: {$near: {$geometry: {type: "Point", coordinates: [18.17585,54.618011]}, $maxDistance: 10000}}}).skip(1)
 ```
 
-<script https://embed.github.com/view/geojson/mkrajnik/nosql/master/mapa1.geojson></script>
