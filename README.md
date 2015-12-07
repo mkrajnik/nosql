@@ -203,7 +203,7 @@ Przed pisaniem zapytań do bazy dopisany zostal indeks:
 ![geo1](https://github.com/mkrajnik/nosql/blob/master/zdjecia/geo1.png)
 
 
-->  Miejscowosci oddalone o 10 km od Bolszewa: 
+**  Miejscowosci oddalone o 10 km od Bolszewa: **
 ``` bash
 > db.miasta.find({loc: {$near: {$geometry: {type: "Point", coordinates: [18.17585,54.618011]}, $maxDistance: 10000}}}).skip(1)
 ```
@@ -211,7 +211,7 @@ Przed pisaniem zapytań do bazy dopisany zostal indeks:
 
 [![mapa1](https://github.com/mkrajnik/nosql/blob/master/zdjecia/geo2.png)](https://github.com/mkrajnik/nosql/blob/master/mapa/mapa1.geojson)
 
-->  Miejscowosci ktore maja w nazwie "Nowa"
+**  Miejscowosci ktore maja w nazwie "Nowa" **
 
 Dodajemy indeks na pole "name" zeby w nim przeszukiwac:
 
@@ -227,7 +227,7 @@ db.miasta.find( { $text: { $search: "Nowa" } } )
 [![mapa4](https://github.com/mkrajnik/nosql/blob/master/zdjecia/geo4.png)](https://github.com/mkrajnik/nosql/blob/master/mapa/mapa3.geojson)
 
 
-->  LineString z Wejherowa do Gdańska
+**  LineString z Wejherowa do Gdańska **
 ``` bash
 db.miasta.find({"name":"Gdańsk"})
 db.miasta.find({"name":"Reda"})
@@ -239,7 +239,7 @@ db.miasta.find({"name":"Sopot"})
 [![mapa3](https://github.com/mkrajnik/nosql/blob/master/zdjecia/geo3.png)](https://github.com/mkrajnik/nosql/blob/master/mapa/mapa2.geojson)
 
 
-->  Miejscowosci zawierajace slowo "Biała" majace id wieksze niz 1000000
+** Miejscowosci zawierajace slowo "Biała" majace id wieksze niz 1000000 **
 
 ``` bash
 db.miasta.find({ $and : [ {"_id": { $gt: 1000000}  } ,  { $text: { $search: "Biała" } }]})
