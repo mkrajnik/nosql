@@ -1,6 +1,6 @@
 {
-	  "type": "FeatureCollection",
-	     "features": [
+  "type": "FeatureCollection",
+ "features": [
   {
     	  "type": "Feature",
         "properties": {"name" : "Gdańsk", "country" : "PL"},
@@ -45,9 +45,15 @@
         }
     },
 	{
+	"type": "Feature"
+        "properties": {
+        	"stroke-width": 5,
+        	"stroke": "#55AA22",
+        	"name": "LineString"
+        },
         "geometry": {
             "coordinates": [
-              [18.689699,54.361099],
+        		 [18.689699,54.361099],
 			  [18.2337,54.605999],
 			  [18.34717,54.605282],
 			  [18.384701,54.569099],
@@ -56,13 +62,9 @@
             ],
             "type": "LineString",
             "_id": "String"
-        },
-        "properties": {
-            "stroke-width": 5,
-            "stroke": "#55AA22",
-            "name": "LineString"
-        },
-        "type": "Feature"
+        }
+       
+       
     }]
 }
 
