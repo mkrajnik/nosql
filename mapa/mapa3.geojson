@@ -78,14 +78,14 @@
             "coordinates":   [ 20.79192, 52.583839 ]
         }
     },
-	{
+{
         "type": "Feature",
-        "properties": {"name" : "Nowa Deba",     "country" : "PL"},
+        "properties": {"name" : "Nowa Ruda",     "country" : "PL"},
         "geometry": {
             "type": "Point",
-            "coordinates":  [ 21.75078, 50.429741 ]
+            "coordinates":   [ 16.51955, 50.573502 ]
         }
-    }
+    },
   ]
 }
 
