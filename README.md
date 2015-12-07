@@ -198,9 +198,14 @@ db.myColl.aggregate ([
 
 ### Zadanie 2d - Geojson
 
+Przed pisaniem zapytań do bazy dopisany zostal indeks:
+
+![geo1](https://github.com/mkrajnik/nosql/blob/master/zdjecia/geo1.png)
+
+
 1. Miejscowosci oddalone o 10 km od Bolszewa: 
 ``` bash
-> db.stacje.find({loc: {$near: {$geometry: {type: "Point", coordinates: [18.17585,54.618011]}, $maxDistance: 10000}}}).skip(1)
+> db.miasta.find({loc: {$near: {$geometry: {type: "Point", coordinates: [18.17585,54.618011]}, $maxDistance: 10000}}}).skip(1)
 ```
 
 
