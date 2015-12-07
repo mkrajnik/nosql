@@ -55,7 +55,7 @@ Miejsce zajete po rozpakowaniu: *29,4 GB (bajtów: 31 648 374 104)*
 
 #### Import - Mongodb - szczególy
 
-![zdjecie1](https://github.com/mkrajnik/nosql/blob/master/mongo1.png)
+![zdjecie1](https://github.com/mkrajnik/nosql/blob/zdjecia/master/mongo1.png)
 
 Używamy komendy mongoimport do importu
 
