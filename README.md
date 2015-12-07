@@ -245,4 +245,4 @@ db.miasta.find({"name":"Sopot"})
 db.miasta.find({ $and : [ {"_id": { $gt: 1000000}  } ,  { $text: { $search: "Biała" } }]})
 ```
 
-[![mapa4](https://github.com/mkrajnik/nosql/blob/master/zdjecia/geo4.png)](https://github.com/mkrajnik/nosql/blob/master/mapa/mapa4.geojson)
+[![mapa4](https://github.com/mkrajnik/nosql/blob/master/zdjecia/geo5.png)](https://github.com/mkrajnik/nosql/blob/master/mapa/mapa4.geojson)
