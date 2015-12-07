@@ -1,13 +1,11 @@
 {
-    "type": "FeatureCollection",
-    "features": [{
-        "type": "Feature",
+  {
+    	  "type": "Feature",
         "properties": {"name" : "Gdańsk", "country" : "PL"},
         "geometry": {
             "type": "Point",
-            "coordinates": [18.689699,54.361099]
+            "coordinates":  [18.689699,54.361099]
         }
-    },{
         "type": "Feature",
         "properties": {"name" : "Wejherowo", "country" : "PL"},
         "geometry": {
