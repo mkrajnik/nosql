@@ -1,0 +1,42 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+         [
+				18.17585,
+				54.618011],
+          [
+				18.68976,
+				54.361118] 
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"name" : "Bolszewo",
+		"country" : "PL"},
+      "geometry": {
+        "type": "Point",
+        "coordinates":  [
+				18.17585,
+				54.618011]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"name" : 	"Gdańsk"
+		"country" : "PL"},
+	  "geometry": {
+        "type": "Point",
+        "coordinates": [
+				18.68976,
+				54.361118] 
+      }
+    }
+  ]
+}
