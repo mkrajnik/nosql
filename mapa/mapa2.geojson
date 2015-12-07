@@ -1,100 +1,68 @@
 {
-  "type": "FeatureCollection",
-  "features": [
-  	 {
-      "type": "Feature",
-      "properties": {"name" : "Bolszewo",
-		"country" : "PL"},
-      "geometry": {
-        "type" : "Point",
-			"coordinates" : [
-					18.17585,
-			        54.618011
-			       
-			]
-      }
-    },
-  {
-  	
-      "type": "Feature",
-      "properties": {"name" : "Goscicino", 
-		"country" : "PL"},
-      "geometry": {
-        "type" : "Point",
-			"coordinates" : [
-				18.154909,
-				54.604591
-			]
-      }
-    },
-	{
-      "type": "Feature",
-      "properties": {"name" : "Orle", 
-		"country" : "PL"},
-      "geometry": {
-        "type" : "Point",
-			"coordinates" : [
-				18.17057,
-				54.640221
-			]
-      }
+    "type": "FeatureCollection",
+    "features": [{
+        "type": "Feature",
+        "properties": {"name" : "Gdańsk", "country" : "PL"},
+        "geometry": {
+            "type": "Point",
+            "coordinates": [18.689699,54.361099]
+        }
+    },{
+        "type": "Feature",
+        "properties": {"name" : "Wejherowo", "country" : "PL"},
+        "geometry": {
+            "type": "Point",
+            "coordinates": [18.2337,54.605999]
+        }
+    },{
+        "type": "Feature",
+        "properties": {"name" : "Reda", "country" : "PL"},
+        "geometry": {
+            "type": "Point",
+            "coordinates": [18.34717,54.605282]
+        }
+    },{
+        "type": "Feature",
+        "properties": {"name" : "Rumia", "country" : "PL"},
+        "geometry": {
+            "type": "Point",
+            "coordinates": [18.384701,54.569099]
+        }
+    },{
+        "type": "Feature",
+        "properties": {"name" : "Gdynia", "country" : "PL"},
+        "geometry": {
+            "type": "Point",
+            "coordinates": [18.531879,54.51889]
+        }
     },
 	{
-      "type": "Feature",
-      "properties": {"name" : "Wejherowo",
-		"country" : "PL"},
-      "geometry": {
-        "type" : "Point",
-			"coordinates" : [
-				18.2337,
-				54.605999
-			]
-      }
+        "type": "Feature",
+        "properties": {"name" : "Sopot", "country" : "PL"},
+        "geometry": {
+            "type": "Point",
+            "coordinates": [18.547819,54.441849]
+        }
     },
 	{
-      "type": "Feature",
-      "properties": {"name" : "Luzino", 
-	    "country" : "PL"},
-      "geometry": {
-       "type" : "Point",
-			"coordinates" : [
-				18.10907,
-				54.56604
-			] 
-      }
-    },
-
-	{
-      "type": "Feature",
-      "properties": {},
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-          	[
-				18.17585,
-			        54.618011
-			]
-            [
-				18.154909,
-				54.604591
-			],
-            [
-				18.17057,
-				54.640221
-			],
-            [
-				18.2337,
-				54.605999
-			],
-            [
-				18.10907,
-				54.56604
-			],
-			
-          ]
-        ]
-      }
-    }
-   ]
+        "geometry": {
+            "coordinates": [
+              [18.689699,54.361099],
+			  [18.2337,54.605999],
+			  [18.34717,54.605282],
+			  [18.384701,54.569099],
+			  [18.531879,54.51889],
+			  [18.547819,54.441849]
+            ],
+            "type": "LineString",
+            "_id": "String"
+        },
+        "properties": {
+            "stroke-width": 5,
+            "stroke": "#55AA22",
+            "name": "LineString"
+        },
+        "type": "Feature"
+    }]
 }
+
