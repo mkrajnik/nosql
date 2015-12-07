@@ -225,3 +225,16 @@ db.miasta.createIndex( { name: "text" } )
 db.miasta.find( { $text: { $search: "Nowa" } } )
 ```
 
+
+
+3. LineString z Wejherowa do Gdańska
+``` bash
+db.miasta.find({"name":"Gdańsk"})
+db.miasta.find({"name":"Reda"})
+db.miasta.find({"name":"Rumia"})
+db.miasta.find({"name":"Gdynia"})
+db.miasta.find({"name":"Sopot"})
+```
+
+[![mapa3](https://github.com/mkrajnik/nosql/blob/master/zdjecia/geo3.png)](https://github.com/mkrajnik/nosql/blob/master/mapa/mapa2.geojson)
+
