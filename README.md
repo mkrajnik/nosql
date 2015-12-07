@@ -210,3 +210,18 @@ Przed pisaniem zapytań do bazy dopisany zostal indeks:
 
 
 [![mapa1](https://github.com/mkrajnik/nosql/blob/master/zdjecia/geo2.png)](https://github.com/mkrajnik/nosql/blob/master/mapa/mapa1.geojson)
+
+2. Miejscowosci ktore maja w nazwie "Nowa"
+
+Dodajemy indeks na pole "name" zeby w nim przeszukiwac:
+
+``` bash
+db.miasta.createIndex( { name: "text" } )
+```
+
+**Zapytanie:**
+
+``` bash
+db.miasta.find( { $text: { $search: "Nowa" } } )
+```
+
