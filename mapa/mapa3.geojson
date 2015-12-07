@@ -1,0 +1,99 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+	{
+        "type": "Feature",
+        "properties": {"name" : "Nowa Wies Wielka", "country" : "PL"},
+        "geometry": {
+            "type": "Point",
+            "coordinates": [ 18.090361, 52.971588 ]
+        }
+    },{
+        "type": "Feature",
+        "properties": {"name" : "Nowa Wies Leborska", "country" : "PL"},
+        "geometry": {
+            "type": "Point",
+            "coordinates": [ 17.72756, 54.558781 ]
+        }
+    },{
+        "type": "Feature",
+        "properties": {"name" : "Nowa Studnica", "country" : "PL"},
+        "geometry": {
+            "type": "Point",
+            "coordinates": [ 16.020439, 53.250439 ]
+        }
+    },{
+        "type": "Feature",
+        "properties": {"name" : "Nowa Sól", "country" : "PL"},
+        "geometry": {
+            "type": "Point",
+            "coordinates":  [ 15.7118, 51.803398 ]
+        }
+    },{
+        "type": "Feature",
+        "properties": {"name" : "Nowa Dęba", "country" : "PL"},
+        "geometry": {
+            "type": "Point",
+            "coordinates": [ 21.754, 50.4198 ]
+        }
+    },
+	{
+        "type": "Feature",
+        "properties": {"name" : "Nowa Wies", "country" : "PL"},
+        "geometry": {
+            "type": "Point",
+            "coordinates":  [ 19.216459, 49.907459 ]
+        }
+    },
+	{
+        "type": "Feature",
+        "properties": {"name" : "Nowa Gora", "country" : "PL"},
+        "geometry": {
+            "type": "Point",
+            "coordinates":   [ 19.5912, 50.17305 ]
+        }
+    },
+	{
+        "type": "Feature",
+        "properties": {"name" : "Nowa Sarzyna",  "country" : "PL"},
+        "geometry": {
+            "type": "Point",
+            "coordinates":   [ 22.344561, 50.320862 ]
+        }
+    },
+	
+	{
+        "type": "Feature",
+        "properties": {"name" : "Nowa Słupia",   "country" : "PL"},
+        "geometry": {
+            "type": "Point",
+            "coordinates":   [ 21.072701, 50.864201 ]
+        }
+    },
+		{
+        "type": "Feature",
+        "properties": {"name" : "Nowa Wieś",    "country" : "PL"},
+        "geometry": {
+            "type": "Point",
+            "coordinates":   [ 20.79192, 52.583839 ]
+        }
+    },
+	{
+        "type": "Feature",
+        "properties": {"name" : "Nowa Ruda",     "country" : "PL"},
+        "geometry": {
+            "type": "Point",
+            "coordinates":   [ 16.51955, 50.573502 ]
+        }
+    },
+	{
+        "type": "Feature",
+        "properties": {"name" : "Nowa Deba",     "country" : "PL"},
+        "geometry": {
+            "type": "Point",
+            "coordinates":  [ 21.75078, 50.429741 ]
+        }
+    }
+	]}
+}
+
