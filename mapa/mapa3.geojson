@@ -93,9 +93,7 @@
             "type": "Point",
             "coordinates":  [ 21.75078, 50.429741 ]
         }
-    },
-     "type": "Point",
-            "_id": "String"
-	]}
+    }
+  ]
 }
 
