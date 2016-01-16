@@ -2,12 +2,14 @@
 
 #### Zadanie 3
 
-*1. Wyszukać w sieci interesujące dane zawierające co najmniej 1_000_000 rekordów/jsonów.*
+***a) Wyszukać w sieci interesujące dane zawierające co najmniej 1_000_000 rekordów/jsonów.***
 
 Dane sciagnelam z: http://archive.ics.uci.edu/ml/datasets/Individual+household+electric+power+consumption
 Sa to dane dotyczace poboru pradu w domach. Archiwum zawiera 2075259 pomiarow zebranych pomiedzy 2006 rokiem a 2010.
  
-##### Dane zapisać w bazie MongoDB.
+ 
+*** b) Dane zapisać w bazie MongoDB. ***
+
 
 Używamy komendy mongoimport:
 ``` sh
@@ -28,9 +30,9 @@ db.powerColl.findOne();
 ```
 
 
-##### Przygotować w JavaScript co najmniej cztery agregacje korzystające z Aggregation Pipeline.
+*** c) Przygotować w JavaScript co najmniej cztery agregacje korzystające z Aggregation Pipeline. ***
   
-##### I
+##### 1
 5 najwiekszych zuzyc pradu w 2 taryfie:
 
 ``` sh
@@ -44,7 +46,7 @@ db.powerColl.aggregate([
 
 
 
-II
+##### 2
 5 Dat kiedy srednie zuzycie pradu na minute bylo wieksze niz 200 V
 
 ``` sh
@@ -59,7 +61,7 @@ db.powerColl.aggregate([
 ```
 
 
-III
+##### 3
 5 godzin w których taryfa 3 jest najbardziej używana:
 
 
@@ -79,7 +81,7 @@ db.powerColl.aggregate([
 ```
 
 
-IV
+##### 4
 Ile wynosilo najwieksze zuzycie pradu (lacznie) w dniu 4 luty 2010
 
 ``` sh
