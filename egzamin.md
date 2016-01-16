@@ -11,7 +11,7 @@ Sa to dane dotyczace poboru pradu w domach. Archiwum zawiera 2075259 pomiarow ze
 
 Używamy komendy mongoimport:
 ``` sh
-mongoimport --db moja --collection powerColl
+mongoimport --db moja --collection powerColl --type csv --headerline < household_power_consumption.txt 
 
 ```
 
