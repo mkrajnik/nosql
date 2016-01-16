@@ -210,3 +210,31 @@ for doc in zapytanie:
 
  
  
+
+##### 4)
+*Ile wynosilo najwieksze zuzycie pradu (lacznie) w dniu 4 luty 2010*
+```python 
+import pymongo
+import json
+from bson.son import SON
+from pymongo import MongoClient
+client = MongoClient()
+
+db = client['moja']
+collection = db['powerColl']
+
+pipeline = [  
+  { "$match": { "Date" : "4/2/2010" } },
+  { "$project" : { "_id": 0 , "Date" : 1 , "wynik": { "$add": ["$Sub_metering_3","$Sub_metering_2", "$Sub_metering_1"] } } },
+  { "$sort" : {"wynik" : -1}},
+  { "$limit": 5}
+]
+ 
+
+zapytanie = db.powerColl.aggregate(pipeline)
+for doc in zapytanie:
+   print(doc)
+```
+
+![p4](https://github.com/mkrajnik/nosql/blob/master/zdjecia/p4.png)
+
