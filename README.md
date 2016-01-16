@@ -2,11 +2,10 @@
 # Nosql - zaliczenie
 Rozwiązania zadań z przedmiotu *Bazy NoSQL*:
 
-1. Zaliczenie:
- - [ ] Neo4j
+1. Zaliczenie: 
  - [x] EDA
 1. Egzamin:
- - [ ] Aggregation Pipeline
+ - [x] [Aggregation Pipeline](https://github.com/mkrajnik/nosql/blob/master/egzamin.md)
  - [ ] MapReduce
 
 
