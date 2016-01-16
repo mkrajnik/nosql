@@ -81,6 +81,8 @@ db.powerColl.aggregate([
 
 ```
 
+![agg3](https://github.com/mkrajnik/nosql/blob/master/zdjecia/ag3.png)
+
 
 ##### 4)
 *Ile wynosilo najwieksze zuzycie pradu (lacznie) w dniu 4 luty 2010*
@@ -100,49 +102,10 @@ db.powerColl.aggregate([
 
 ***4. Zaprogramować i wykonać wszystkie agregacje z pkt. 3 w_innym niż JavaScript języku programowania. Skorzystać z jednego z driverów wymienionych na stronie MongoDB Drivers.***
 
+### Python
 
-PYTHON
-
-
-
-
-
-2)
-``` python
-import pymongo
-import json
-from bson.son import SON
-from pymongo import MongoClient
-client = MongoClient()
-
-db = client['moja']
-collection = db['powerColl']
-
-pipeline = [
-  { "$match": { "Voltage": {"$gte": 20}} }, 
-  { "$project" : { "_id": 0 , "Date" : 1 , "Voltage": 1 } },
-  { "$sort" : {="Voltage" : -1}},
-  { "$limit": 5}
-]
- 
-
-zapytanie = db.powerColl.aggregate(pipeline)
-for doc in zapytanie:
-   print(doc)
-```   
-   
-
-
-
-
-
-
-
-
-
-
-
-
+##### 1)
+*5 najwiekszych zuzyc pradu w 2 taryfie:*
 
 
 ``` python
@@ -167,12 +130,53 @@ for doc in zapytanie:
    print(doc)
 ```
 
+![p1](https://github.com/mkrajnik/nosql/blob/master/zdjecia/python11.png)
 
 
 
 
 
 
+
+
+##### 2)
+*5 Dat kiedy srednie zuzycie pradu na minute bylo wieksze niz 20 V*
+
+``` python
+import pymongo
+import json
+from bson.son import SON
+from pymongo import MongoClient
+client = MongoClient()
+
+db = client['moja']
+collection = db['powerColl']
+
+pipeline = [
+  { "$match": { "Voltage": {"$gte": 20}} }, 
+  { "$project" : { "_id": 0 , "Date" : 1 , "Voltage": 1 } },
+  { "$sort" : {="Voltage" : -1}},
+  { "$limit": 5}
+]
+ 
+
+zapytanie = db.powerColl.aggregate(pipeline)
+for doc in zapytanie:
+   print(doc)
+```    
+
+ 
+
+![p2](https://github.com/mkrajnik/nosql/blob/master/zdjecia/python1.png)
+
+
+
+
+
+
+
+##### 3)
+*5 godzin w których taryfa 3 jest najbardziej używana:*
 
 ``` python
 import pymongo
@@ -201,7 +205,7 @@ for doc in zapytanie:
    print(doc)
 
 ```
-
+![p3](https://github.com/mkrajnik/nosql/blob/master/zdjecia/python4.png)
 
 
  
