@@ -128,3 +128,38 @@ for doc in zapytanie:
    print(doc)
 ```   
    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+``` python
+import pymongo
+import json
+from bson.son import SON
+from pymongo import MongoClient
+client = MongoClient()
+
+db = client['moja']
+collection = db['powerColl']
+
+pipeline = [
+  { "$group": {"_id": {"Time": "$Time"}, "count": {"$sum": "$Sub_metering_2"}}},
+  { "$sort" : {"count" : -1}},
+  { "$limit": 5}
+]
+ 
+
+zapytanie = db.powerColl.aggregate(pipeline)
+for doc in zapytanie:
+   print(doc)
+```
