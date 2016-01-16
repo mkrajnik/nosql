@@ -47,7 +47,7 @@ db.powerColl.aggregate([
 
 
 #####  2)
-*5 Dat kiedy srednie zuzycie pradu na minute bylo wieksze niz 200 V*
+*5 Dat kiedy srednie zuzycie pradu na minute bylo wieksze niz 20 V*
 
 ``` sh
 
@@ -96,3 +96,35 @@ db.powerColl.aggregate([
 ``` 
 
 ***4. Zaprogramować i wykonać wszystkie agregacje z pkt. 3 w_innym niż JavaScript języku programowania. Skorzystać z jednego z driverów wymienionych na stronie MongoDB Drivers.***
+
+
+PYTHON
+
+
+
+
+
+2)
+``` python
+import pymongo
+import json
+from bson.son import SON
+from pymongo import MongoClient
+client = MongoClient()
+
+db = client['moja']
+collection = db['powerColl']
+
+pipeline = [
+  { "$match": { "Voltage": {"$gte": 20}} }, 
+  { "$project" : { "_id": 0 , "Date" : 1 , "Voltage": 1 } },
+  { "$sort" : {="Voltage" : -1}},
+  { "$limit": 5}
+]
+ 
+
+zapytanie = db.powerColl.aggregate(pipeline)
+for doc in zapytanie:
+   print(doc)
+```   
+   
