@@ -163,3 +163,43 @@ zapytanie = db.powerColl.aggregate(pipeline)
 for doc in zapytanie:
    print(doc)
 ```
+
+
+
+
+
+
+
+
+``` python
+import pymongo
+import json
+from bson.son import SON
+from pymongo import MongoClient
+client = MongoClient()
+
+db = client['moja']
+collection = db['powerColl']
+
+pipeline = [ 
+{"$project" : {
+   "hour": {"$substr" : ["$Time", 0, 2]},
+   "sub": {"Sub_metering_3": "$Sub_metering_3"}
+  }} ,
+ { "$group": {"_id": {"hour": "$hour", "subd" : "$sub.Sub_metering_3"}}},
+ { "$group": {"_id": "$_id.hour", "count": {"$sum": "$_id.subd"}}},
+ { "$sort" : {"count" : -1}},
+ { "$limit": 5}
+]
+ 
+
+zapytanie = db.powerColl.aggregate(pipeline)
+for doc in zapytanie:
+   print(doc)
+
+```
+
+
+
+ 
+ 
