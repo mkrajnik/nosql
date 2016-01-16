@@ -32,8 +32,8 @@ db.powerColl.findOne();
 
 ***c) Przygotować w JavaScript co najmniej cztery agregacje korzystające z Aggregation Pipeline.***
   
-##### 1
-5 najwiekszych zuzyc pradu w 2 taryfie:
+#####  1)
+*5 najwiekszych zuzyc pradu w 2 taryfie:*
 
 ``` sh
 
@@ -46,8 +46,8 @@ db.powerColl.aggregate([
 
 
 
-##### 2
-5 Dat kiedy srednie zuzycie pradu na minute bylo wieksze niz 200 V
+#####  2)
+*5 Dat kiedy srednie zuzycie pradu na minute bylo wieksze niz 200 V*
 
 ``` sh
 
@@ -61,8 +61,8 @@ db.powerColl.aggregate([
 ```
 
 
-##### 3
-5 godzin w których taryfa 3 jest najbardziej używana:
+##### 3)
+*5 godzin w których taryfa 3 jest najbardziej używana:*
 
 
 
@@ -81,8 +81,8 @@ db.powerColl.aggregate([
 ```
 
 
-##### 4
-Ile wynosilo najwieksze zuzycie pradu (lacznie) w dniu 4 luty 2010
+##### 4)
+*Ile wynosilo najwieksze zuzycie pradu (lacznie) w dniu 4 luty 2010*
 
 ``` sh
 
@@ -95,22 +95,4 @@ db.powerColl.aggregate([
 ])
 ``` 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4. Zaprogramować i wykonać wszystkie agregacje z pkt. 3 w_innym niż JavaScript języku programowania. Skorzystać z jednego z driverów wymienionych na stronie MongoDB Drivers.
+***4. Zaprogramować i wykonać wszystkie agregacje z pkt. 3 w_innym niż JavaScript języku programowania. Skorzystać z jednego z driverów wymienionych na stronie MongoDB Drivers.***
