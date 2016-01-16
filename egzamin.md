@@ -1,8 +1,8 @@
-Egzamin
+### Egzamin
 
-Zadanie 3
+#### Zadanie 3
 
-1. Wyszukać w sieci interesujące dane zawierające co najmniej 1_000_000 rekordów/jsonów.
+*1. Wyszukać w sieci interesujące dane zawierające co najmniej 1_000_000 rekordów/jsonów.*
 
 Dane sciagnelam z: http://archive.ics.uci.edu/ml/datasets/Individual+household+electric+power+consumption
 
