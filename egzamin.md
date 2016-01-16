@@ -10,7 +10,7 @@ Sa to dane dotyczace poboru pradu w domach. Archiwum zawiera 2075259 pomiarow ze
 2. Dane zapisać w bazie MongoDB.
 
 Używamy komendy mongoimport:
-``` sql
+``` sh
 mongoimport --db moja --collection powerColl
 
 ```
