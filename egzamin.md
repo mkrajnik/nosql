@@ -29,6 +29,7 @@ Przykladowy rekord:
 db.powerColl.findOne(); 
 ```
 
+![rek1](https://github.com/mkrajnik/nosql/blob/master/zdjecia/findOne.png)
 
 ***c) Przygotować w JavaScript co najmniej cztery agregacje korzystające z Aggregation Pipeline.***
   
@@ -44,7 +45,7 @@ db.powerColl.aggregate([
 ])
 ```
 
-
+![r2](https://github.com/mkrajnik/nosql/blob/master/zdjecia/agregation1.png)
 
 #####  2)
 *5 Dat kiedy srednie zuzycie pradu na minute bylo wieksze niz 20 V*
@@ -59,7 +60,7 @@ db.powerColl.aggregate([
   { $limit: 5}
 ])
 ```
-
+![ag2](https://github.com/mkrajnik/nosql/blob/master/zdjecia/ag2.png)
 
 ##### 3)
 *5 godzin w których taryfa 3 jest najbardziej używana:*
@@ -94,6 +95,8 @@ db.powerColl.aggregate([
   { $limit: 5}
 ])
 ``` 
+![ag4](https://github.com/mkrajnik/nosql/blob/master/zdjecia/agregation2.png)
+
 
 ***4. Zaprogramować i wykonać wszystkie agregacje z pkt. 3 w_innym niż JavaScript języku programowania. Skorzystać z jednego z driverów wymienionych na stronie MongoDB Drivers.***
 
