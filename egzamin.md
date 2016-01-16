@@ -8,7 +8,7 @@ Dane sciagnelam z: http://archive.ics.uci.edu/ml/datasets/Individual+household+e
 Sa to dane dotyczace poboru pradu w domach. Archiwum zawiera 2075259 pomiarow zebranych pomiedzy 2006 rokiem a 2010.
  
  
-*** b) Dane zapisać w bazie MongoDB. ***
+***b) Dane zapisać w bazie MongoDB.***
 
 
 Używamy komendy mongoimport:
@@ -30,7 +30,7 @@ db.powerColl.findOne();
 ```
 
 
-*** c) Przygotować w JavaScript co najmniej cztery agregacje korzystające z Aggregation Pipeline. ***
+***c) Przygotować w JavaScript co najmniej cztery agregacje korzystające z Aggregation Pipeline.***
   
 ##### 1
 5 najwiekszych zuzyc pradu w 2 taryfie:
